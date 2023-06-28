@@ -126,7 +126,10 @@
   }
   function getErrorMessage(error) {
     const url = "http://www.mocky.io/v2/5dfcef48310000ee0ed2c281";
-    fetch(url)
+    fetch(url, {
+      method: "GET",
+      mode: "cors",
+    })
       .then(function (response) {
         if (!response.ok) {
           throw new Error("Error HTTP: " + response.status);
