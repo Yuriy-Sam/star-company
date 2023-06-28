@@ -125,8 +125,7 @@
     console.log("errorName", errorName);
   }
   function getErrorMessage(error) {
-    const url =
-      "https://cors.io/?http://www.mocky.io/v2/5dfcef48310000ee0ed2c281";
+    const url = "http://www.mocky.io/v2/5dfcef48310000ee0ed2c281";
     fetch(url)
       .then(function (response) {
         if (!response.ok) {
